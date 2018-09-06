@@ -1,0 +1,144 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.list-classes {
+    li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 10px;
+    }
+}
+
+$red: rgb(236, 116, 116);
+$purple: rgb(211, 71, 211);
+$green: rgb(120, 196, 120);
+$blue: rgb(141, 141, 235);
+$orange: rgb(250, 209, 132);
+$yellow: rgb(250, 248, 147);
+
+.bdii {
+    background-color: $red;
+    border: 1px solid darken($red, 20);
+}
+
+.dsii {
+    background-color: $purple;
+    border: 1px solid darken($purple, 20);
+}
+
+.so {
+    background-color: $green;
+    border: 1px solid darken($green, 20);
+}
+
+.fc {
+    background-color: $blue;
+    border: 1px solid darken($blue, 20);
+}
+
+.pota {
+    background-color: $orange;
+    border: 1px solid darken($orange, 20);
+}
+
+.ead {
+    background-color: $yellow;
+    border: 1px solid darken($yellow, 20);
+}
+
+#main {
+    background-color: rgb(224, 224, 224);
+    min-height: 100vh;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lista {
+    width: 1000wh;
+    overflow-x: scroll;
+    height: 100vh;
+    ul {
+        li {
+            margin: 0 2%;
+            h1 {
+                text-align: center;
+                font-size: 1.6em;
+                border-bottom: 2px solid rgba(0,0,0,0.5);
+            }
+        }
+    }
+    .card {
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 3%;
+        font-size: 1em;
+        .card-header {
+            background-color: rgba(0,0,0,0.2);
+            padding: 5px;
+            font-weight: bold;
+        }
+        .card-body {
+            background-color: rgb(245, 245, 245);
+            padding: 2%;
+            ol {
+                li {
+                    text-align: left;
+                }
+            }
+        }
+        .card-footer {
+            background-color: rgba(255,255,255,.3);
+            padding: 5px;
+            font-size: .8em;
+        }
+    }
+}
+
+.add-form {
+    width: 50%;
+    top: -100%;
+    position: absolute;
+    transition: all 300ms 0s linear;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);;
+    background-color: #fff;
+    padding: 2% 5%;
+    &.active {
+        top: 50%;
+    }
+
+    legend {
+        text-align: center;
+    }
+}
+
+.add-form-show {
+    position: fixed;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    border-radius: 50%;
+    border:1px solid rgba(0,0,0,0.3);
+    bottom: 2%;
+    right: 1%;
+    z-index: 10;
+    text-align: center;
+    line-height: 54px;
+    font-size: 4em;
+    color: $green;
+    cursor: pointer;
+    user-select: none;
+}
