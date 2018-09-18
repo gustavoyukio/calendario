@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
 
   orderAssigments (obj) {
 
-    let orderedAssigments = new Array();
+    let orderedAssigments = [];
     let current:string = "";
     let index = -1;
 
@@ -79,7 +79,7 @@ export class AppComponent implements OnInit {
       if ( current == '' || current != obj[i].date) {
         current = obj[i].date;
         index++;
-        orderedAssigments[index] = new Array();
+        orderedAssigments[index] = [];
       }
       
       orderedAssigments[index].push(obj[i]);
